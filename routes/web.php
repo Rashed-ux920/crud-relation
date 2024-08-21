@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\maincontroller;
 use App\Http\Controllers\ProductController;
+use App\Models\category;
 use Illuminate\Support\Facades\Route;
 
     //homepage
@@ -25,3 +26,7 @@ Route::get('/cateogry/product', [ProductController::class, 'index'])->name('prod
     //addproduct
 
 Route::get('/category/addproduct', [ProductController::class, 'create'])->name('addproduct');
+
+    //stor product
+
+Route::post('/category/addproduct', [ProductController::class, 'stor'])->name('storpro');
