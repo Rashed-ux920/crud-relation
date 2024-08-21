@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\peoduct;
+use App\Models\product;
 use Illuminate\Http\Request;
 
-class PeoductController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('product');
     }
 
     /**
@@ -20,7 +20,7 @@ class PeoductController extends Controller
      */
     public function create()
     {
-        //
+        return view('addproduct');
     }
 
     /**
@@ -34,7 +34,7 @@ class PeoductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(peoduct $peoduct)
+    public function show(product $product)
     {
         //
     }
@@ -42,7 +42,7 @@ class PeoductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(peoduct $peoduct)
+    public function edit(product $product)
     {
         //
     }
@@ -50,7 +50,7 @@ class PeoductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, peoduct $peoduct)
+    public function update(Request $request, product $product)
     {
         //
     }
@@ -58,7 +58,7 @@ class PeoductController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(peoduct $peoduct)
+    public function destroy(product $product)
     {
         //
     }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\maincontroller;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
     //homepage
@@ -10,9 +11,17 @@ Route::get('/', [categorycontroller::class, 'index'])->name('home');
 
     //addcategory
 
-Route::get('/product/addcategory', [CategoryController::class, 'create'])->name('category');
+Route::get('/catogery/addcategory', [CategoryController::class, 'create'])->name('category');
 
 
     //store catgory
 
-Route::post('/product/addcategory', [CategoryController::class, 'store'])->name('store');
+Route::post('/catogery/addcategory', [CategoryController::class, 'store'])->name('store');
+
+    //productpage
+
+Route::get('/cateogry/product', [ProductController::class, 'index'])->name('product');
+
+    //addproduct
+
+Route::get('/category/addproduct', [ProductController::class, 'create'])->name('addproduct');

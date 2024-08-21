@@ -50,9 +50,9 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(category $category)
+    public function edit($id)
     {
-        //
+
     }
 
     /**

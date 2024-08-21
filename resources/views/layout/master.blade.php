@@ -24,7 +24,10 @@
                     <a class="nav-link" href="{{route('category')}}">addcategory</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">cart</a>
+                    <a class="nav-link" href="{{route('product')}}">product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{route('addproduct')}}">addproduct</a>
                   </li>
 
                 </ul>
