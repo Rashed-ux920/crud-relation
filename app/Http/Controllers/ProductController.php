@@ -12,7 +12,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('product');
+        $productes = product::all();
+        return view('product',['productes' => $productes]);
     }
 
     /**
@@ -20,6 +21,7 @@ class ProductController extends Controller
      */
     public function create()
     {
+        
         return view('addproduct');
     }
 
@@ -36,15 +38,8 @@ class ProductController extends Controller
         $product->	cat_id = $request->type;
 
         $product->save();
-        
-    }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(product $product)
-    {
-        //
+        return to_route('addproduct');
     }
 
     /**
