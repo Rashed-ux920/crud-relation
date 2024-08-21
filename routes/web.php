@@ -29,4 +29,4 @@ Route::get('/category/addproduct', [ProductController::class, 'create'])->name('
 
     //stor product
 
-Route::post('/category/addproduct', [ProductController::class, 'stor'])->name('storpro');
+Route::post('/category/addproduct', [ProductController::class, 'store'])->name('storpro');

@@ -13,6 +13,12 @@
               <label for="description" class="form-label justify-center">description</label>
               <input type="textarea" class="form-control" id="description" aria-describedby="textHelp" name="description">
             </div>
+            <select class="form-select" aria-label="Default select example" name="type">
+                <option selected>Open this select menu</option>
+                <option value="1">wooden</option>
+                <option value="2">painter</option>
+                <option value="3">blacksmith</option>
+            </select>
             <div class="mb-3 justify-center">
               <label for="price" class="form-label justify-center">Price</label>
               <input type="number" class="form-control" id="price" name="price">

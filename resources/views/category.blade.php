@@ -10,12 +10,12 @@
               {{-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> --}}
             </div>
 
-            <select class="form-select" aria-label="Default select example" name="type">
+            {{-- <select class="form-select" aria-label="Default select example" name="type">
                 <option selected>Open this select menu</option>
                 <option value="1">wooden</option>
                 <option value="2">painter</option>
                 <option value="3">blacksmith</option>
-            </select>
+            </select> --}}
             <br>
             {{-- <div class="mb-3 justify-center">
               <label for="description" class="form-label justify-center">description</label>
