@@ -21,7 +21,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        
+
         return view('addproduct');
     }
 
@@ -45,9 +45,12 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(product $product)
+    public function edit($id)
     {
-        //
+        $productes = product::findOrFail($id);
+
+        return view('editpro', ['productes' => $productes]);
+
     }
 
     /**

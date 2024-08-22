@@ -29,6 +29,13 @@
                     <h5 class="card-title">{{$item->cat_name}}</h5>
                     <a href="#" class="btn btn-primary text-light">GO</a>
                 </div>
+                <div class="continer">
+
+                    <a href="#" class="btn btn-warning">Edit</a>
+
+                    <a href="#" class="btn btn-danger">Delete</a>
+
+                </div>
             </div>
         @endforeach
     </div>

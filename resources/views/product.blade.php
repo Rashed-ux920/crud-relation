@@ -13,7 +13,18 @@
                     <div class="mb-3 justify-center">
                         {{$product->p_price . " JD"}}
                     </div>
-                    <a href="#" class="btn btn-primary text-light">GO</a>
+                    <div class="continer d-flex justify-between flex-colmn">
+
+                        <a href="#" class="btn btn-primary text-light">GO</a>
+
+                        <div class="continer">
+
+                            <a href="{{route('editpro')","{{ $product->id }} }}" class="btn btn-warning">Edit</a>
+
+                            {{-- <a href="{{route('editpro')}}" class="btn btn-danger">Delte</a> --}}
+
+                        </div>
+                    </div>
                 </div>
             </div>
 

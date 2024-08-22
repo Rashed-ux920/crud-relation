@@ -30,3 +30,7 @@ Route::get('/category/addproduct', [ProductController::class, 'create'])->name('
     //stor product
 
 Route::post('/category/addproduct', [ProductController::class, 'store'])->name('storpro');
+
+    //editproduct
+
+Route::get('/product/{id}/edit',[ProductController::class,'edit'])->name('editpro');
