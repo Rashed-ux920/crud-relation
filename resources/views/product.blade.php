@@ -19,9 +19,9 @@
 
                         <div class="continer">
 
-                            <a href="{{route('editpro')","{{ $product->id }} }}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('editpro',$product->id) }}" class="btn btn-warning">Edit</a>
 
-                            {{-- <a href="{{route('editpro')}}" class="btn btn-danger">Delte</a> --}}
+                            <a href="{{route('editpro',$product->id)}}" class="btn btn-danger">Delte</a>
 
                         </div>
                     </div>

@@ -34,3 +34,7 @@ Route::post('/category/addproduct', [ProductController::class, 'store'])->name('
     //editproduct
 
 Route::get('/product/{id}/edit',[ProductController::class,'edit'])->name('editpro');
+
+    //updateproduct
+Route::post('/product/{id}/update', [ProductController::class, 'update'])->name('update');
+

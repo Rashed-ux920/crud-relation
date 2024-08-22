@@ -48,7 +48,7 @@ class ProductController extends Controller
     public function edit($id)
     {
         $productes = product::findOrFail($id);
-
+        // dd($productes);
         return view('editpro', ['productes' => $productes]);
 
     }
@@ -56,9 +56,20 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, product $product)
+    public function update(Request $request, product $productes)
     {
-        //
+        $productes =[
+            'p_name' => $request->name,
+            'p_description' => $request->description,
+            'p_price' => $request->price,
+            'cat_type'=> $request->type
+        ];
+
+         dd($productes);
+
+         $prooductes->save();
+
+         return to_route('product');
     }
 
     /**
